@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="29">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>22</ID>
+      <Description>"Game states"</Description>
+      <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>10</ID>
+          <Description>"IsPlayingAudio?"</Description>
+          <LastState Value="0" RealAddress="0019D857"/>
+          <VariableType>Byte</VariableType>
+          <Address>0019D857</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"IsGamePlaying?"</Description>
+          <LastState Value="0" RealAddress="0019FDE6"/>
+          <VariableType>Byte</VariableType>
+          <Address>0019FDE6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>12</ID>
+          <Description>"IsCursorLocked?"</Description>
+          <LastState Value="0" RealAddress="018D1040"/>
+          <VariableType>Byte</VariableType>
+          <Address>DDDA.exe+14D1040</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>23</ID>
+      <Description>"Pointers"</Description>
+      <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>38</ID>
+          <Description>"Player save record base address"</Description>
+          <LastState Value="0F4E7EF0" RealAddress="11E13E4C"/>
+          <ShowAsHex>1</ShowAsHex>
+          <VariableType>Float</VariableType>
+          <Address>DDDA.exe+14FA4D8</Address>
+          <Offsets>
+            <Offset>3DEC</Offset>
+            <Offset>48</Offset>
+            <Offset>0</Offset>
+            <Offset>30</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>39</ID>
+      <Description>"Player"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"Stamina"</Description>
+          <LastState Value="902" RealAddress="0F4E8198"/>
+          <VariableType>Float</VariableType>
+          <Address>pPlayer+2A8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>40</ID>
+      <Description>"Godmode - Physical Damage"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"DDDA.exe"+376F82)
+define(bytes,F3 0F 5C 44 24 0C)
+
+[ENABLE]
+
+assert(address,bytes)
+
+label(return)
+
+address:
+  // Ignore direct damage value (partal godmode)
+  nop 6
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // subss xmm0,[esp+0C]
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DDDA.exe"+376F82
+
+"DDDA.exe"+376F51: 57                       -  push edi
+"DDDA.exe"+376F52: 8B F8                    -  mov edi,eax
+"DDDA.exe"+376F54: F6 47 30 01              -  test byte ptr [edi+30],01
+"DDDA.exe"+376F58: 0F 85 C9 00 00 00        -  jne DDDA.exe+377027
+"DDDA.exe"+376F5E: 8B 87 B8 01 00 00        -  mov eax,[edi+000001B8]
+"DDDA.exe"+376F64: F6 80 FC 0C 00 00 01     -  test byte ptr [eax+00000CFC],01
+"DDDA.exe"+376F6B: 0F 85 B6 00 00 00        -  jne DDDA.exe+377027
+"DDDA.exe"+376F71: F3 0F 10 47 08           -  movss xmm0,[edi+08]
+"DDDA.exe"+376F76: 8B 8F B4 01 00 00        -  mov ecx,[edi+000001B4]
+"DDDA.exe"+376F7C: F3 0F 11 44 24 04        -  movss [esp+04],xmm0
+// ---------- INJECTING HERE ----------
+"DDDA.exe"+376F82: F3 0F 5C 44 24 0C        -  subss xmm0,[esp+0C]
+// ---------- DONE INJECTING  ----------
+"DDDA.exe"+376F88: 56                       -  push esi
+"DDDA.exe"+376F89: F3 0F 11 47 08           -  movss [edi+08],xmm0
+"DDDA.exe"+376F8E: 85 C9                    -  test ecx,ecx
+"DDDA.exe"+376F90: 74 3B                    -  je DDDA.exe+376FCD
+"DDDA.exe"+376F92: 68 F8 55 99 01           -  push DDDA.exe+15955F8
+"DDDA.exe"+376F97: E8 F4 C7 C8 FF           -  call DDDA.exe+3790
+"DDDA.exe"+376F9C: 84 C0                    -  test al,al
+"DDDA.exe"+376F9E: 74 2D                    -  je DDDA.exe+376FCD
+"DDDA.exe"+376FA0: 8B B7 B4 01 00 00        -  mov esi,[edi+000001B4]
+"DDDA.exe"+376FA6: F6 86 6C 20 00 00 02     -  test byte ptr [esi+0000206C],02
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>44</ID>
+      <Description>"Godmode - DOT Damage"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"DDDA.exe"+488F95)
+define(bytes,F3 0F 11 4D 08)
+
+[ENABLE]
+
+assert(address,bytes)
+
+label(return)
+
+address:
+  nop 5
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // movss [ebp+08],xmm1
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DDDA.exe"+488F95
+
+"DDDA.exe"+488F6E: 72 10                    -  jb DDDA.exe+488F80
+"DDDA.exe"+488F70: 8B 87 EC 3D 00 00        -  mov eax,[edi+00003DEC]
+"DDDA.exe"+488F76: 85 C0                    -  test eax,eax
+"DDDA.exe"+488F78: 74 06                    -  je DDDA.exe+488F80
+"DDDA.exe"+488F7A: 88 98 58 03 00 00        -  mov [eax+00000358],bl
+"DDDA.exe"+488F80: F3 0F 10 44 24 1C        -  movss xmm0,[esp+1C]
+"DDDA.exe"+488F86: 0F 57 DB                 -  xorps xmm3,xmm3
+"DDDA.exe"+488F89: F3 0F 10 4D 08           -  movss xmm1,[ebp+08]
+"DDDA.exe"+488F8E: F3 0F 58 C8              -  addss xmm1,xmm0
+"DDDA.exe"+488F92: 0F 2F D9                 -  comiss xmm3,xmm1
+// ---------- INJECTING HERE ----------
+"DDDA.exe"+488F95: F3 0F 11 4D 08           -  movss [ebp+08],xmm1
+// ---------- DONE INJECTING  ----------
+"DDDA.exe"+488F9A: 72 43                    -  jb DDDA.exe+488FDF
+"DDDA.exe"+488F9C: 0F 2E C3                 -  ucomiss xmm0,xmm3
+"DDDA.exe"+488F9F: 9F                       -  lahf 
+"DDDA.exe"+488FA0: F6 C4 44                 -  test ah,44
+"DDDA.exe"+488FA3: 7B 3A                    -  jnp DDDA.exe+488FDF
+"DDDA.exe"+488FA5: 8B 44 24 20              -  mov eax,[esp+20]
+"DDDA.exe"+488FA9: 2B C3                    -  sub eax,ebx
+"DDDA.exe"+488FAB: 74 1C                    -  je DDDA.exe+488FC9
+"DDDA.exe"+488FAD: 2B C3                    -  sub eax,ebx
+"DDDA.exe"+488FAF: 74 09                    -  je DDDA.exe+488FBA
+}
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>TODO:
+1. Quality of Life changes
+ - Allow mouse scroll on UI lists
+ - EXP bar
+ - Improve quest tracking (warn player before accepting a quest if it would fail other quests)
+ - Speed up looting animations (or skip them)
+2. New features
+ - Custom items (with models?)
+ - Custom monster drops
+</Comments>
+  <LuaScript>local gameProcessName = 'DDDA.exe'
+
+function attachToDDDA()
+  if proces == gameProcessName then return true end
+  openProcess(gameProcessName)
+  return process == gameProcessName
+end
+
+function readPointerOffset(address, ...)
+  local ceAddressStr = tostring(address)
+  for i,v in ipairs{...} do
+    ceAddressStr = '[' .. ceAddressStr .. ']+' .. v
+  end
+  return readPointer(ceAddressStr)
+end
+
+function registerDddaSymbols()
+  unregisterSymbol('pPlayer')
+
+  local pPlayer = readPointerOffset(
+             'DDDA.exe+14FA4D8',
+             '30',
+             '0',
+             '48',
+             '3DEC')
+  if not pPlayer then
+    return false
+  end
+
+  registerSymbol('pPlayer', string.format('%X', pPlayer), true)
+  return true
+end
+
+function addField(name, address, type)
+  local rec = la.createMemoryRecord()
+  rec.setDescription(name)
+  rec.setAddress(address)
+  rec.setType(type or vtDword)
+  return rec
+end
+
+if not attachToDDDA() then
+  print('Failed to attached to Dragons Dogma: Dark Arisen')
+  return
+end
+
+-- TODO: Wait for pointer to player to be available in-game
+registerDddaSymbols()
+</LuaScript>
+  <DisassemblerComments>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+65EF6</Address>
+      <Comment>Store one address from actor positions array?
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+66BFD</Address>
+      <Comment>Set X pos
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+66C02</Address>
+      <Comment>Set Y pos
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+66C07</Address>
+      <Comment>Set Z pos
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+376F82</Address>
+      <Comment>Substract actor HP from damage field of damage obj
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+376F89</Address>
+      <Comment>Damage actor from (physical) hit
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+39E95F</Address>
+      <Comment>Align actor pos Z with ground collision
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+44C059</Address>
+      <Comment>Call 'handleActorMovement' ?
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+44D042</Address>
+      <Comment>Move in X axis
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+44D052</Address>
+      <Comment>Gravity (falling) - can still walk down
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+44D062</Address>
+      <Comment>Move in Y axis
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+488F95</Address>
+      <Comment>Actor DOT damage
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781532</Address>
+      <Comment>Sets EAX to actor base address
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+7815C6</Address>
+      <Comment>Sets EAX to actor base address
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781F82</Address>
+      <Comment>Update actor stamina 
+is based on the just-calculated exercise drainage
+shared between all player-like actors
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+9F0F0B</Address>
+      <Comment>0 = freeze game
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+9F1952</Address>
+      <Comment>1 = Game should run
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+A04DDF</Address>
+      <Comment>1 = Cursor locked (hidden)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+A04EF1</Address>
+      <Comment>Skip showing cursor if 'already shown'
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+A04F02</Address>
+      <Comment>0 = cursor is unlocked (not clipped to game)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"XAudio2_7.dll"+430E8</Address>
+      <Comment>Guess: If EDX is 1 then get next audio wave
+AKA: Play game sound
+</Comment>
+    </DisassemblerComment>
+  </DisassemblerComments>
+</CheatTable>
