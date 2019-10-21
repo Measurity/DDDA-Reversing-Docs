@@ -11,70 +11,174 @@
         <CheatEntry>
           <ID>10</ID>
           <Description>"IsPlayingAudio?"</Description>
-          <LastState Value="0" RealAddress="0019D857"/>
           <VariableType>Byte</VariableType>
           <Address>0019D857</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>11</ID>
           <Description>"IsGamePlaying?"</Description>
-          <LastState Value="0" RealAddress="0019FDE6"/>
           <VariableType>Byte</VariableType>
           <Address>0019FDE6</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>12</ID>
           <Description>"IsCursorLocked?"</Description>
-          <LastState Value="0" RealAddress="018D1040"/>
           <VariableType>Byte</VariableType>
           <Address>DDDA.exe+14D1040</Address>
         </CheatEntry>
-      </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>23</ID>
-      <Description>"Pointers"</Description>
-      <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
-      <LastState Value="" RealAddress="00000000"/>
-      <GroupHeader>1</GroupHeader>
-      <CheatEntries>
         <CheatEntry>
-          <ID>38</ID>
-          <Description>"Player save record base address"</Description>
-          <LastState Value="0F4E7EF0" RealAddress="11E13E4C"/>
+          <ID>63</ID>
+          <Description>"Player"</Description>
+          <Options moHideChildren="1"/>
           <ShowAsHex>1</ShowAsHex>
-          <VariableType>Float</VariableType>
+          <VariableType>4 Bytes</VariableType>
           <Address>DDDA.exe+14FA4D8</Address>
           <Offsets>
+            <Offset>0</Offset>
             <Offset>3DEC</Offset>
             <Offset>48</Offset>
             <Offset>0</Offset>
             <Offset>30</Offset>
           </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>65</ID>
+              <Description>"HP"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+29C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>66</ID>
+              <Description>"Max HP"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+2A0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>67</ID>
+              <Description>"Recoverable HP"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+2A4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>68</ID>
+              <Description>"Stamina"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+2A8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>78</ID>
+              <Description>"Max stamina (Base)"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+2AC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>79</ID>
+              <Description>"Max stamina (Bonus)"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+2B0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>81</ID>
+              <Description>"EXP"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+2C4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>82</ID>
+              <Description>"EXP needed"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+2C8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>69</ID>
+              <Description>"Gold"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+348</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>70</ID>
+              <Description>"Rift Crystals"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+34C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>71</ID>
+              <Description>"Level"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+700</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>72</ID>
+              <Description>"Name"</Description>
+              <VariableType>String</VariableType>
+              <Length>32</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+70C</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>73</ID>
+          <Description>"Inventories"</Description>
+          <Options moHideChildren="1"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>DDDA.exe+14FA4D4</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>74</ID>
+              <Description>"Player"</Description>
+              <Options moHideChildren="1"/>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>75</ID>
+                  <Description>"Total amount of item types"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+180</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>61</ID>
+                  <Description>"Amount of Curatives"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+194+14*0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>76</ID>
+                  <Description>"Amount of Tools"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+194+14*1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>77</ID>
+                  <Description>"Total weight"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+3C4</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>39</ID>
-      <Description>"Player"</Description>
+      <ID>53</ID>
+      <Description>"Cheats"</Description>
+      <Options moHideChildren="1"/>
       <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
-          <ID>24</ID>
-          <Description>"Stamina"</Description>
-          <LastState Value="902" RealAddress="0F4E8198"/>
-          <VariableType>Float</VariableType>
-          <Address>pPlayer+2A8</Address>
-        </CheatEntry>
-      </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>40</ID>
-      <Description>"Godmode - Physical Damage"</Description>
-      <LastState/>
-      <VariableType>Auto Assembler Script</VariableType>
-      <AssemblerScript>define(address,"DDDA.exe"+376F82)
+          <ID>40</ID>
+          <Description>"Godmode - Physical Damage"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address,"DDDA.exe"+376F82)
 define(bytes,F3 0F 5C 44 24 0C)
 
 [ENABLE]
@@ -122,13 +226,13 @@ address:
 "DDDA.exe"+376FA6: F6 86 6C 20 00 00 02     -  test byte ptr [esi+0000206C],02
 }
 </AssemblerScript>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>44</ID>
-      <Description>"Godmode - DOT Damage"</Description>
-      <LastState/>
-      <VariableType>Auto Assembler Script</VariableType>
-      <AssemblerScript>define(address,"DDDA.exe"+488F95)
+        </CheatEntry>
+        <CheatEntry>
+          <ID>44</ID>
+          <Description>"Godmode - DOT Damage"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address,"DDDA.exe"+488F95)
 define(bytes,F3 0F 11 4D 08)
 
 [ENABLE]
@@ -175,6 +279,100 @@ address:
 "DDDA.exe"+488FAF: 74 09                    -  je DDDA.exe+488FBA
 }
 </AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>88</ID>
+      <Description>"WIP"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>86</ID>
+          <Description>"Exp requirement multiplier (used in setExpRequirement())"</Description>
+          <VariableType>Float</VariableType>
+          <Address>2BD19630+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>97</ID>
+          <Description>"Level up data"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <VariableType>4 Bytes</VariableType>
+          <Address>DDDA.exe+14FA4EC</Address>
+          <Offsets>
+            <Offset>868</Offset>
+          </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>89</ID>
+              <Description>"Level up exp requirement"</Description>
+              <Options moHideChildren="1"/>
+              <ShowAsHex>1</ShowAsHex>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+              <Offsets>
+                <Offset>70</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>87</ID>
+                  <Description>"Level 1/base exp requirement"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+0</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                    <Offset>0</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>96</ID>
+                  <Description>"Level up exp mult"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+0</Address>
+                  <Offsets>
+                    <Offset>4</Offset>
+                    <Offset>8</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>90</ID>
+                  <Description>"Level up exp step"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+0</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                    <Offset>4</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>95</ID>
+                  <Description>"Next exp mult level threshold"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+0</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                    <Offset>C</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>98</ID>
+                  <Description>"ESI DWORD PTR DDDA.exe+75C0FE"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+0</Address>
+                  <Offsets>
+                    <Offset>4</Offset>
+                    <Offset>8+4</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
@@ -187,6 +385,13 @@ address:
 2. New features
  - Custom items (with models?)
  - Custom monster drops
+Inventory base struct of party member = [DDDA.exe+14FA4D4]+(Party_member_index*11E8)
+Player inventory = [DDDA.exe+14FA4D4]+0
+Main pawn inventory = [DDDA.exe+14FA4D4]+11E8
+Item count per inventory page = [DDDA.exe+14FA4D4]+194+14*inventory_page_index
+Item in inventory struct:
++0A: Item ID
++44: Weight
 </Comments>
   <LuaScript>local gameProcessName = 'DDDA.exe'
 
@@ -196,48 +401,95 @@ function attachToDDDA()
   return process == gameProcessName
 end
 
-function readPointerOffset(address, ...)
+function pointerToCEString(address, ...)
   local ceAddressStr = tostring(address)
   for i,v in ipairs{...} do
     ceAddressStr = '[' .. ceAddressStr .. ']+' .. v
   end
-  return readPointer(ceAddressStr)
+  return ceAddressStr
+end
+
+function setSymbol(name, address, ...)
+  unregisterSymbol(name)
+  local ceAddress = pointerToCEString(address, unpack({...}))
+  local saveToTable = false
+  registerSymbol(name, ceAddress, not saveToTable)
 end
 
 function registerDddaSymbols()
-  unregisterSymbol('pPlayer')
-
-  local pPlayer = readPointerOffset(
-             'DDDA.exe+14FA4D8',
-             '30',
-             '0',
-             '48',
-             '3DEC')
-  if not pPlayer then
-    return false
-  end
-
-  registerSymbol('pPlayer', string.format('%X', pPlayer), true)
-  return true
-end
-
-function addField(name, address, type)
-  local rec = la.createMemoryRecord()
-  rec.setDescription(name)
-  rec.setAddress(address)
-  rec.setType(type or vtDword)
-  return rec
+  setSymbol('pInventories', 'DDDA.exe+14FA4D4')
+  setSymbol('pPlayer', 'DDDA.exe+14FA4D8', '30', '0', '48', '3DEC')
 end
 
 if not attachToDDDA() then
-  print('Failed to attached to Dragons Dogma: Dark Arisen')
+  print('Failed to attached to Dragon\'s Dogma: Dark Arisen')
   return
 end
 
--- TODO: Wait for pointer to player to be available in-game
-registerDddaSymbols()
+-- TODO: Inject code on game load to capture pointers to player, enemies, etc
+--registerDddaSymbols()
 </LuaScript>
   <DisassemblerComments>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+589E0</Address>
+      <Comment>Start of function 'set inventory weight'
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+589EC</Address>
+      <Comment>inventory.weight = 0 (init before loop)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+58A26</Address>
+      <Comment>Start of sum(item.weight) loop
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+58AA9</Address>
+      <Comment>loop_item_weight = item.weight
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+58AD3</Address>
+      <Comment>sum = 0
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+58AD6</Address>
+      <Comment>sum = weight scalar (always 1?)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+58ADA</Address>
+      <Comment>sum = scalar * loop_item_weight
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+58ADE</Address>
+      <Comment>sum += inventory.weight
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+58AE6</Address>
+      <Comment>loop_index++
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+58AE7</Address>
+      <Comment>inventory.weight = sum
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+58AEF</Address>
+      <Comment>loop_index &lt; inventory.length
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+58AF2</Address>
+      <Comment>goto start_of_loop
+</Comment>
+    </DisassemblerComment>
     <DisassemblerComment>
       <Address>"DDDA.exe"+65EF6</Address>
       <Comment>Store one address from actor positions array?
@@ -266,6 +518,11 @@ registerDddaSymbols()
     <DisassemblerComment>
       <Address>"DDDA.exe"+376F89</Address>
       <Comment>Damage actor from (physical) hit
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+38239B</Address>
+      <Comment>xmm2 = actor.maxStamina
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -299,8 +556,221 @@ registerDddaSymbols()
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
-      <Address>"DDDA.exe"+781532</Address>
-      <Comment>Sets EAX to actor base address
+      <Address>"DDDA.exe"+75BF83</Address>
+      <Comment>eax = 0
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75BF88</Address>
+      <Comment>eax = calculateExpRequirement()
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75BF8E</Address>
+      <Comment>actor.expRequirement = eax
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C080</Address>
+      <Comment>%s
+updateExpRequirement()
+Called after level has increased
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C095</Address>
+      <Comment>ebp = current level
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C099</Address>
+      <Comment>cmp current_level,1
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C09C</Address>
+      <Comment>jump if lvl != 1
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C09E</Address>
+      <Comment>eax = exp_requirement  = 200
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0A1</Address>
+      <Comment>Cleanup the stack before returning..
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0B0</Address>
+      <Comment>ecx = 6 ??
+Type ID?
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0B4</Address>
+      <Comment>edi = level 1 exp requirement = 200
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0B7</Address>
+      <Comment>eax = exp increase step = 220
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0BA</Address>
+      <Comment>[esp+20] = 200
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0C3</Address>
+      <Comment>eax = 0
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0C5</Address>
+      <Comment>cmp current level, 2
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0C9</Address>
+      <Comment>eax = 220
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0CD</Address>
+      <Comment>FPU PUSH loop_previous_exp
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0D3</Address>
+      <Comment>ensure exp requirement is non negative
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0DB</Address>
+      <Comment>%s
+size of exp multi struct
+Used to get new exp requirement multiplier 
+after predefined level thresholds
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0E3</Address>
+      <Comment>cmp loop_level, [ecx+08]
+
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0E6</Address>
+      <Comment>loop_level &lt; [ecx+08]
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0E8</Address>
+      <Comment>eax = 8
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0EF</Address>
+      <Comment>esi = a struct of the exp multiplier lookup table
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C0FE</Address>
+      <Comment>FPU 0 = exp_mult_lookup_entry.value
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C101</Address>
+      <Comment>[esp+20] = exp requirement of previous loop
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C105</Address>
+      <Comment>FPU 0 = FPU 0 * FPU 1
+FPU 0 = exp_req_increase_mult * exp_req_increase_step
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C107</Address>
+      <Comment>Push exp needed (previous level) on FPU.
+Moves all FPU values 1 register down
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C115</Address>
+      <Comment>Store CPU math control (not sure what it does)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C119</Address>
+      <Comment>Inc iteration counter
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C11F</Address>
+      <Comment>FPU 0 = FPU 0 + FPU 1
+FPU 0 = loop_previous_exp + (220 * 1.3)
+Moves all FPU values up
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C12E</Address>
+      <Comment>[esp+14] = exp_requirement
+shifts FPU values up (FPU 7 = FPU 0)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C132</Address>
+      <Comment>eax = exp_requirement
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C136</Address>
+      <Comment>edi = exp_requirement
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C138</Address>
+      <Comment>Restore CPU control number
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C13C</Address>
+      <Comment>edx = current iteration
+ebp = current actor level
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C13E</Address>
+      <Comment>jump if actor.level &gt; loop_level
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+77E5AA</Address>
+      <Comment>%s
+Inventory offset based on inventory index
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+7814F7</Address>
+      <Comment>esp = staminaChangeStruct
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+7814FC</Address>
+      <Comment>call 'setActorStamina(esp)'
+XMM0 = current stamina
+XMM1 = 200 ??
+XMM2 = max stamina
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+78152D</Address>
+      <Comment>call 'setActorStamina(staminaChangeStruct)'
+esp = staminaChangeStruct
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -309,10 +779,59 @@ registerDddaSymbols()
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
+      <Address>"DDDA.exe"+781E38</Address>
+      <Comment>Start of 'setActorStamina(staminaChangeStruct)'
+esp = base address of stamina change struct
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781E3C</Address>
+      <Comment>ebp = ??somestruct??.actor
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781E4E</Address>
+      <Comment>xmm1 = staminaChange.value
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781F6A</Address>
+      <Comment>xmm1 = stamina_delta (either positive or negative)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781F70</Address>
+      <Comment>xmm4 = 0
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781F73</Address>
+      <Comment>stamina = actor.stamina
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781F7B</Address>
+      <Comment>xmm5 = xmm0 = actor.stamina
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781F7E</Address>
+      <Comment>stamina += stamina_delta
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
       <Address>"DDDA.exe"+781F82</Address>
-      <Comment>Update actor stamina 
-is based on the just-calculated exercise drainage
-shared between all player-like actors
+      <Comment>actor.stamina = stamina
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781F8A</Address>
+      <Comment>edi = address of actor struct
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+781FFA</Address>
+      <Comment>cmp max stamina with cur stamina
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
