@@ -5,7 +5,7 @@
       <ID>22</ID>
       <Description>"Game states"</Description>
       <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
-      <LastState Value="" RealAddress="00000000"/>
+      <LastState Value="" Activated="1" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
@@ -33,6 +33,7 @@
           <ID>118</ID>
           <Description>"Player"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="0DD67EF0" RealAddress="10BB3E4C"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>DDDA.exe+14FA4D8</Address>
@@ -47,6 +48,7 @@
               <ID>130</ID>
               <Description>"HP (instanced player)"</Description>
               <Options moManualExpandCollapse="1"/>
+              <LastState Value="928" RealAddress="106B52E8"/>
               <VariableType>Float</VariableType>
               <Address>-20D4</Address>
               <Offsets>
@@ -58,6 +60,7 @@
               <ID>126</ID>
               <Description>"Position"</Description>
               <Options moManualExpandCollapse="1"/>
+              <LastState Value="45B17902" RealAddress="10BB00A0"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>-3DAC</Address>
@@ -65,18 +68,21 @@
                 <CheatEntry>
                   <ID>125</ID>
                   <Description>"X"</Description>
+                  <LastState Value="5679.125977" RealAddress="10BB00A0"/>
                   <VariableType>Float</VariableType>
                   <Address>+0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>123</ID>
                   <Description>"Y"</Description>
+                  <LastState Value="550.1148682" RealAddress="10BB00A4"/>
                   <VariableType>Float</VariableType>
                   <Address>+4</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>124</ID>
                   <Description>"Z"</Description>
+                  <LastState Value="-3009.848633" RealAddress="10BB00A8"/>
                   <VariableType>Float</VariableType>
                   <Address>+8</Address>
                 </CheatEntry>
@@ -86,6 +92,7 @@
               <ID>119</ID>
               <Description>"Stats for save game"</Description>
               <Options moManualExpandCollapse="1"/>
+              <LastState Value="01595D74" RealAddress="0DD67EF0"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
@@ -96,78 +103,380 @@
                 <CheatEntry>
                   <ID>106</ID>
                   <Description>"HP (read only)"</Description>
+                  <LastState Value="928" RealAddress="0DD6818C"/>
                   <VariableType>Float</VariableType>
                   <Address>+29C</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>107</ID>
                   <Description>"Max HP"</Description>
+                  <LastState Value="928" RealAddress="0DD68190"/>
                   <VariableType>Float</VariableType>
                   <Address>+2A0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>108</ID>
                   <Description>"Recoverable HP"</Description>
+                  <LastState Value="928" RealAddress="0DD68194"/>
                   <VariableType>Float</VariableType>
                   <Address>+2A4</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>109</ID>
                   <Description>"Stamina"</Description>
+                  <LastState Value="1040" RealAddress="0DD68198"/>
                   <VariableType>Float</VariableType>
                   <Address>+2A8</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>110</ID>
                   <Description>"Max stamina (Base)"</Description>
+                  <LastState Value="560" RealAddress="0DD6819C"/>
                   <VariableType>Float</VariableType>
                   <Address>+2AC</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>111</ID>
                   <Description>"Max stamina (Bonus)"</Description>
+                  <LastState Value="480" RealAddress="0DD681A0"/>
                   <VariableType>Float</VariableType>
                   <Address>+2B0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>112</ID>
                   <Description>"EXP"</Description>
+                  <LastState Value="33128" RealAddress="0DD681B4"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+2C4</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>113</ID>
                   <Description>"EXP needed"</Description>
+                  <LastState Value="35220" RealAddress="0DD681B8"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+2C8</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>114</ID>
+                  <ID>138</ID>
+                  <Description>"Vocations"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="1" RealAddress="0DD689AC"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+ABC</Address>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>139</ID>
+                      <Description>"Fighter"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="1" RealAddress="0DD689AC"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+0</Address>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>136</ID>
+                          <Description>"Vocation rank"</Description>
+                          <LastState Value="1" RealAddress="0DD689AC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+0</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>114</ID>
+                          <Description>"Discipline gained"</Description>
+                          <LastState Value="0" RealAddress="0DD689D4"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>137</ID>
+                          <Description>"Discipline for next rank"</Description>
+                          <LastState Value="500" RealAddress="0DD689FC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+50</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>159</ID>
+                      <Description>"Strider"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="1" RealAddress="0DD689B0"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>160</ID>
+                          <Description>"Vocation rank"</Description>
+                          <LastState Value="1" RealAddress="0DD689B0"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+0</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>161</ID>
+                          <Description>"Discipline gained"</Description>
+                          <LastState Value="155" RealAddress="0DD689D8"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>162</ID>
+                          <Description>"Discipline for next rank"</Description>
+                          <LastState Value="500" RealAddress="0DD68A00"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+50</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>155</ID>
+                      <Description>"Mage"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="3" RealAddress="0DD689B4"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+8</Address>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>156</ID>
+                          <Description>"Vocation rank"</Description>
+                          <LastState Value="3" RealAddress="0DD689B4"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+0</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>157</ID>
+                          <Description>"Discipline gained"</Description>
+                          <LastState Value="790" RealAddress="0DD689DC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>158</ID>
+                          <Description>"Discipline for next rank"</Description>
+                          <LastState Value="2000" RealAddress="0DD68A04"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+50</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>163</ID>
+                      <Description>"Mystic Knight"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="1" RealAddress="0DD689B8"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>164</ID>
+                          <Description>"Vocation rank"</Description>
+                          <LastState Value="1" RealAddress="0DD689B8"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+0</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>165</ID>
+                          <Description>"Discipline gained"</Description>
+                          <LastState Value="0" RealAddress="0DD689E0"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>166</ID>
+                          <Description>"Discipline for next rank"</Description>
+                          <LastState Value="500" RealAddress="0DD68A08"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+50</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>167</ID>
+                      <Description>"Assassin"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="1" RealAddress="0DD689BC"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+10</Address>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>168</ID>
+                          <Description>"Vocation rank"</Description>
+                          <LastState Value="1" RealAddress="0DD689BC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+0</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>169</ID>
+                          <Description>"Discipline gained"</Description>
+                          <LastState Value="0" RealAddress="0DD689E4"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>170</ID>
+                          <Description>"Discipline for next rank"</Description>
+                          <LastState Value="800" RealAddress="0DD68A0C"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+50</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>171</ID>
+                      <Description>"Magick Archer"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="1" RealAddress="0DD689C0"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+14</Address>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>172</ID>
+                          <Description>"Vocation rank"</Description>
+                          <LastState Value="1" RealAddress="0DD689C0"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+0</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>173</ID>
+                          <Description>"Discipline gained"</Description>
+                          <LastState Value="0" RealAddress="0DD689E8"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>174</ID>
+                          <Description>"Discipline for next rank"</Description>
+                          <LastState Value="800" RealAddress="0DD68A10"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+50</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>175</ID>
+                      <Description>"Warrior"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="1" RealAddress="0DD689C4"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+18</Address>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>176</ID>
+                          <Description>"Vocation rank"</Description>
+                          <LastState Value="1" RealAddress="0DD689C4"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+0</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>177</ID>
+                          <Description>"Discipline gained"</Description>
+                          <LastState Value="0" RealAddress="0DD689EC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>178</ID>
+                          <Description>"Discipline for next rank"</Description>
+                          <LastState Value="650" RealAddress="0DD68A14"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+50</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>179</ID>
+                      <Description>"Ranger"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="1" RealAddress="0DD689C8"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+1C</Address>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>180</ID>
+                          <Description>"Vocation rank"</Description>
+                          <LastState Value="1" RealAddress="0DD689C8"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+0</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>181</ID>
+                          <Description>"Discipline gained"</Description>
+                          <LastState Value="0" RealAddress="0DD689F0"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>182</ID>
+                          <Description>"Discipline for next rank"</Description>
+                          <LastState Value="500" RealAddress="0DD68A18"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+50</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>140</ID>
+                      <Description>"Sorcerer"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="8" RealAddress="0DD689CC"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+20</Address>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>141</ID>
+                          <Description>"Vocation rank"</Description>
+                          <LastState Value="8" RealAddress="0DD689CC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+0</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>142</ID>
+                          <Description>"Discipline gained"</Description>
+                          <LastState Value="5533" RealAddress="0DD689F4"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>143</ID>
+                          <Description>"Discipline for next rank"</Description>
+                          <LastState Value="9500" RealAddress="0DD68A1C"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+50</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>135</ID>
                   <Description>"Discipline"</Description>
+                  <LastState Value="1622" RealAddress="0DD68234"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+344</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>131</ID>
                   <Description>"Gold"</Description>
+                  <LastState Value="435455" RealAddress="0DD68238"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+348</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>115</ID>
                   <Description>"Rift Crystals"</Description>
+                  <LastState Value="121" RealAddress="0DD6823C"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+34C</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>116</ID>
                   <Description>"Level"</Description>
+                  <LastState Value="30" RealAddress="0DD685F0"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+700</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>117</ID>
                   <Description>"Name"</Description>
+                  <LastState RealAddress="0DD685FC"/>
                   <VariableType>String</VariableType>
                   <Length>32</Length>
                   <Unicode>0</Unicode>
@@ -183,7 +492,7 @@
           <ID>73</ID>
           <Description>"Inventories"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="0155E5B8" RealAddress="0E4C2D40"/>
+          <LastState Value="0155E5B8" RealAddress="0E462D40"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>DDDA.exe+14FA4D4</Address>
@@ -195,7 +504,7 @@
               <ID>74</ID>
               <Description>"Player"</Description>
               <Options moHideChildren="1"/>
-              <LastState Value="0155E5B8" RealAddress="0E4C2D40"/>
+              <LastState Value="0155E5B8" RealAddress="0E462D40"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
@@ -203,28 +512,28 @@
                 <CheatEntry>
                   <ID>75</ID>
                   <Description>"Item slots used"</Description>
-                  <LastState Value="0" RealAddress="0E4C2EC0"/>
+                  <LastState Value="21" RealAddress="0E462EC0"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+180</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>61</ID>
                   <Description>"Amount of Curatives"</Description>
-                  <LastState Value="0" RealAddress="0E4C2ED4"/>
+                  <LastState Value="3" RealAddress="0E462ED4"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+194+14*0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>76</ID>
                   <Description>"Amount of Tools"</Description>
-                  <LastState Value="0" RealAddress="0E4C2EE8"/>
+                  <LastState Value="2" RealAddress="0E462EE8"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+194+14*1</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>77</ID>
                   <Description>"Total weight"</Description>
-                  <LastState Value="0" RealAddress="0E4C3104"/>
+                  <LastState Value="17.71899986" RealAddress="0E463104"/>
                   <VariableType>Float</VariableType>
                   <Address>+3C4</Address>
                 </CheatEntry>
@@ -234,7 +543,7 @@
               <ID>102</ID>
               <Description>"Storage"</Description>
               <Options moHideChildren="1"/>
-              <LastState Value="28C45120" RealAddress="0E4C2E50"/>
+              <LastState Value="2AA84F70" RealAddress="0E462E50"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+110</Address>
@@ -242,21 +551,21 @@
                 <CheatEntry>
                   <ID>103</ID>
                   <Description>"Item slots used"</Description>
-                  <LastState Value="0" RealAddress="0E4C7660"/>
+                  <LastState Value="121" RealAddress="0E467660"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>+4810</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>104</ID>
                   <Description>"Max item slots"</Description>
-                  <LastState Value="7000" RealAddress="0E4C7664"/>
+                  <LastState Value="7000" RealAddress="0E467664"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>+4814</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>99</ID>
                   <Description>"Amount of Jewelty"</Description>
-                  <LastState Value="0" RealAddress="0E4C7750"/>
+                  <LastState Value="2" RealAddress="0E467750"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+4900</Address>
                 </CheatEntry>
@@ -473,7 +782,7 @@ dealloc(newmem)
           <ID>97</ID>
           <Description>"Level up data"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="00000000" RealAddress="0DDE1C08"/>
+          <LastState Value="2E85D3E0" RealAddress="0DD81C08"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>DDDA.exe+14FA4EC</Address>
@@ -485,6 +794,7 @@ dealloc(newmem)
               <ID>89</ID>
               <Description>"Level up exp requirement"</Description>
               <Options moHideChildren="1"/>
+              <LastState Value="14A5CB30" RealAddress="2E85D450"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
@@ -495,6 +805,7 @@ dealloc(newmem)
                 <CheatEntry>
                   <ID>87</ID>
                   <Description>"Level 1/base exp requirement"</Description>
+                  <LastState Value="200" RealAddress="072FA7E8"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+0</Address>
                   <Offsets>
@@ -505,6 +816,7 @@ dealloc(newmem)
                 <CheatEntry>
                   <ID>96</ID>
                   <Description>"Level up exp mult"</Description>
+                  <LastState Value="1.299999952" RealAddress="072FA5A4"/>
                   <VariableType>Float</VariableType>
                   <Address>+0</Address>
                   <Offsets>
@@ -515,6 +827,7 @@ dealloc(newmem)
                 <CheatEntry>
                   <ID>90</ID>
                   <Description>"Level up exp step"</Description>
+                  <LastState Value="220" RealAddress="072FA758"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+0</Address>
                   <Offsets>
@@ -525,6 +838,7 @@ dealloc(newmem)
                 <CheatEntry>
                   <ID>95</ID>
                   <Description>"Next exp mult level threshold"</Description>
+                  <LastState Value="6" RealAddress="072FA668"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+0</Address>
                   <Offsets>
@@ -535,6 +849,7 @@ dealloc(newmem)
                 <CheatEntry>
                   <ID>98</ID>
                   <Description>"ESI DWORD PTR DDDA.exe+75C0FE"</Description>
+                  <LastState Value="40400000" RealAddress="072FA664"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+0</Address>
@@ -544,99 +859,6 @@ dealloc(newmem)
                   </Offsets>
                 </CheatEntry>
               </CheatEntries>
-            </CheatEntry>
-          </CheatEntries>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>63</ID>
-          <Description>"Stats"</Description>
-          <Options moHideChildren="1"/>
-          <ShowAsHex>1</ShowAsHex>
-          <VariableType>4 Bytes</VariableType>
-          <Address>DDDA.exe+14FA4D8</Address>
-          <Offsets>
-            <Offset>0</Offset>
-            <Offset>3DEC</Offset>
-            <Offset>48</Offset>
-            <Offset>0</Offset>
-            <Offset>30</Offset>
-          </Offsets>
-          <CheatEntries>
-            <CheatEntry>
-              <ID>65</ID>
-              <Description>"HP"</Description>
-              <VariableType>Float</VariableType>
-              <Address>+29C</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>66</ID>
-              <Description>"Max HP"</Description>
-              <VariableType>Float</VariableType>
-              <Address>+2A0</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>67</ID>
-              <Description>"Recoverable HP"</Description>
-              <VariableType>Float</VariableType>
-              <Address>+2A4</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>68</ID>
-              <Description>"Stamina"</Description>
-              <VariableType>Float</VariableType>
-              <Address>+2A8</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>78</ID>
-              <Description>"Max stamina (Base)"</Description>
-              <VariableType>Float</VariableType>
-              <Address>+2AC</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>79</ID>
-              <Description>"Max stamina (Bonus)"</Description>
-              <VariableType>Float</VariableType>
-              <Address>+2B0</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>81</ID>
-              <Description>"EXP"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>+2C4</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>82</ID>
-              <Description>"EXP needed"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>+2C8</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>69</ID>
-              <Description>"Gold"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>+348</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>70</ID>
-              <Description>"Rift Crystals"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>+34C</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>71</ID>
-              <Description>"Level"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>+700</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>72</ID>
-              <Description>"Name"</Description>
-              <VariableType>String</VariableType>
-              <Length>32</Length>
-              <Unicode>0</Unicode>
-              <CodePage>0</CodePage>
-              <ZeroTerminate>1</ZeroTerminate>
-              <Address>+70C</Address>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
@@ -896,6 +1118,8 @@ Item count per inventory page = [DDDA.exe+14FA4D4]+194+14*inventory_page_index
 Item in inventory struct:
 +0A: Item ID
 +44: Weight
+14BC68E0+29C = Vocation Rank
+DDDA.exe+273234  { Set new vocation id after vocation change }
 </Comments>
   <LuaScript>local gameProcessName = 'DDDA.exe'
 
@@ -937,6 +1161,32 @@ end
     <DisassemblerComment>
       <Address>"DDDA.exe"+220F3</Address>
       <Comment>xmm0 = actor.maxHealth
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+43474</Address>
+      <Comment>Start of 'onKill()'
+Calculates exp reward and adds it to all party members
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+434DD</Address>
+      <Comment>Hardmode exp doubling
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+4355F</Address>
+      <Comment>Load exp mult
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+43563</Address>
+      <Comment>Load monster kill exp
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+43571</Address>
+      <Comment>Multiply exp reward in FPU 0 with multiplier in FPU 1
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -1064,6 +1314,11 @@ from item stack
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
+      <Address>"DDDA.exe"+273234</Address>
+      <Comment>Set new vocation id after vocation change
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
       <Address>"DDDA.exe"+376F82</Address>
       <Comment>Substract actor HP from damage field of damage obj
 </Comment>
@@ -1089,13 +1344,28 @@ from item stack
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
+      <Address>"DDDA.exe"+382D62</Address>
+      <Comment>[esp+14] = expReward
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+382D67</Address>
+      <Comment>FPU 0 = EXP reward for kill
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
       <Address>"DDDA.exe"+382D9B</Address>
       <Comment>actor.exp += expGain
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
+      <Address>"DDDA.exe"+382EE2</Address>
+      <Comment>actor.vocation.discipline += disciplineGain
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
       <Address>"DDDA.exe"+382EE9</Address>
-      <Comment>player.discipline += disciplineGain
+      <Comment>actor.discipline += disciplineGain
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -1354,6 +1624,22 @@ ebp = current actor level
     <DisassemblerComment>
       <Address>"DDDA.exe"+75C13E</Address>
       <Comment>jump if actor.level &gt; loop_level
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C258</Address>
+      <Comment>Start of 'updateVocationRank()'
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C27E</Address>
+      <Comment>ECX = Discipline gained for current rank
+EDX = Discipline needed for next rank
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+75C298</Address>
+      <Comment>actor.vocationRank = newRank
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
