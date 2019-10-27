@@ -5,7 +5,7 @@
       <ID>22</ID>
       <Description>"Game states"</Description>
       <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
-      <LastState Value="" Activated="1" RealAddress="00000000"/>
+      <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
@@ -32,8 +32,7 @@
         <CheatEntry>
           <ID>118</ID>
           <Description>"Player"</Description>
-          <Options moHideChildren="1"/>
-          <LastState Value="0DD97EF0" Activated="1" RealAddress="10653E4C"/>
+          <Options moManualExpandCollapse="1"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>DDDA.exe+14FA4D8</Address>
@@ -45,10 +44,49 @@
           </Offsets>
           <CheatEntries>
             <CheatEntry>
+              <ID>130</ID>
+              <Description>"HP (instanced player)"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <VariableType>Float</VariableType>
+              <Address>-20D4</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>126</ID>
+              <Description>"Position"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <ShowAsHex>1</ShowAsHex>
+              <VariableType>4 Bytes</VariableType>
+              <Address>-3DAC</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>125</ID>
+                  <Description>"X"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>123</ID>
+                  <Description>"Y"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>124</ID>
+                  <Description>"Z"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+8</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
               <ID>119</ID>
-              <Description>"Stats"</Description>
-              <Options moHideChildren="1"/>
-              <LastState Value="22633844" RealAddress="0DD97EF0"/>
+              <Description>"Stats for save game"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
               <Offsets>
@@ -57,85 +95,79 @@
               <CheatEntries>
                 <CheatEntry>
                   <ID>106</ID>
-                  <Description>"HP"</Description>
-                  <LastState Value="896" RealAddress="0DD9818C"/>
+                  <Description>"HP (read only)"</Description>
                   <VariableType>Float</VariableType>
                   <Address>+29C</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>107</ID>
                   <Description>"Max HP"</Description>
-                  <LastState Value="896" RealAddress="0DD98190"/>
                   <VariableType>Float</VariableType>
                   <Address>+2A0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>108</ID>
                   <Description>"Recoverable HP"</Description>
-                  <LastState Value="896" RealAddress="0DD98194"/>
                   <VariableType>Float</VariableType>
                   <Address>+2A4</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>109</ID>
                   <Description>"Stamina"</Description>
-                  <LastState Value="1010" RealAddress="0DD98198"/>
                   <VariableType>Float</VariableType>
                   <Address>+2A8</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>110</ID>
                   <Description>"Max stamina (Base)"</Description>
-                  <LastState Value="560" RealAddress="0DD9819C"/>
                   <VariableType>Float</VariableType>
                   <Address>+2AC</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>111</ID>
                   <Description>"Max stamina (Bonus)"</Description>
-                  <LastState Value="450" RealAddress="0DD981A0"/>
                   <VariableType>Float</VariableType>
                   <Address>+2B0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>112</ID>
                   <Description>"EXP"</Description>
-                  <LastState Value="1711" RealAddress="0DD981B4"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+2C4</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>113</ID>
                   <Description>"EXP needed"</Description>
-                  <LastState Value="31260" RealAddress="0DD981B8"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+2C8</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>114</ID>
+                  <Description>"Discipline"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+344</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>131</ID>
                   <Description>"Gold"</Description>
-                  <LastState Value="707555" RealAddress="0DD98238"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+348</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>115</ID>
                   <Description>"Rift Crystals"</Description>
-                  <LastState Value="105" RealAddress="0DD9823C"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+34C</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>116</ID>
                   <Description>"Level"</Description>
-                  <LastState Value="28" RealAddress="0DD985F0"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+700</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>117</ID>
                   <Description>"Name"</Description>
-                  <LastState RealAddress="0DD985FC"/>
                   <VariableType>String</VariableType>
                   <Length>32</Length>
                   <Unicode>0</Unicode>
@@ -145,43 +177,13 @@
                 </CheatEntry>
               </CheatEntries>
             </CheatEntry>
-            <CheatEntry>
-              <ID>126</ID>
-              <Description>"Position"</Description>
-              <LastState Value="1187577200" RealAddress="106500A0"/>
-              <VariableType>4 Bytes</VariableType>
-              <Address>-3DAC</Address>
-              <CheatEntries>
-                <CheatEntry>
-                  <ID>125</ID>
-                  <Description>"X"</Description>
-                  <LastState Value="25726.71875" RealAddress="106500A0"/>
-                  <VariableType>Float</VariableType>
-                  <Address>+0</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>123</ID>
-                  <Description>"Y"</Description>
-                  <LastState Value="-2234.318604" RealAddress="106500A4"/>
-                  <VariableType>Float</VariableType>
-                  <Address>+4</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>124</ID>
-                  <Description>"Z"</Description>
-                  <LastState Value="10727.32227" RealAddress="106500A8"/>
-                  <VariableType>Float</VariableType>
-                  <Address>+8</Address>
-                </CheatEntry>
-              </CheatEntries>
-            </CheatEntry>
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
           <ID>73</ID>
           <Description>"Inventories"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="0155E5B8" RealAddress="0E492D40"/>
+          <LastState Value="0155E5B8" RealAddress="0E4C2D40"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>DDDA.exe+14FA4D4</Address>
@@ -193,7 +195,7 @@
               <ID>74</ID>
               <Description>"Player"</Description>
               <Options moHideChildren="1"/>
-              <LastState Value="0155E5B8" RealAddress="0E492D40"/>
+              <LastState Value="0155E5B8" RealAddress="0E4C2D40"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
@@ -201,28 +203,28 @@
                 <CheatEntry>
                   <ID>75</ID>
                   <Description>"Item slots used"</Description>
-                  <LastState Value="21" RealAddress="0E492EC0"/>
+                  <LastState Value="0" RealAddress="0E4C2EC0"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+180</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>61</ID>
                   <Description>"Amount of Curatives"</Description>
-                  <LastState Value="4" RealAddress="0E492ED4"/>
+                  <LastState Value="0" RealAddress="0E4C2ED4"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+194+14*0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>76</ID>
                   <Description>"Amount of Tools"</Description>
-                  <LastState Value="3" RealAddress="0E492EE8"/>
+                  <LastState Value="0" RealAddress="0E4C2EE8"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+194+14*1</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>77</ID>
                   <Description>"Total weight"</Description>
-                  <LastState Value="13.17900085" RealAddress="0E493104"/>
+                  <LastState Value="0" RealAddress="0E4C3104"/>
                   <VariableType>Float</VariableType>
                   <Address>+3C4</Address>
                 </CheatEntry>
@@ -232,7 +234,7 @@
               <ID>102</ID>
               <Description>"Storage"</Description>
               <Options moHideChildren="1"/>
-              <LastState Value="26EB5440" RealAddress="0E492E50"/>
+              <LastState Value="28C45120" RealAddress="0E4C2E50"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+110</Address>
@@ -240,21 +242,21 @@
                 <CheatEntry>
                   <ID>103</ID>
                   <Description>"Item slots used"</Description>
-                  <LastState Value="104" RealAddress="0E497660"/>
+                  <LastState Value="0" RealAddress="0E4C7660"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>+4810</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>104</ID>
                   <Description>"Max item slots"</Description>
-                  <LastState Value="7000" RealAddress="0E497664"/>
+                  <LastState Value="7000" RealAddress="0E4C7664"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>+4814</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>99</ID>
                   <Description>"Amount of Jewelty"</Description>
-                  <LastState Value="3" RealAddress="0E497750"/>
+                  <LastState Value="0" RealAddress="0E4C7750"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+4900</Address>
                 </CheatEntry>
@@ -267,16 +269,23 @@
     <CheatEntry>
       <ID>53</ID>
       <Description>"Cheats"</Description>
-      <Options moHideChildren="1"/>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
       <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
-          <ID>40</ID>
-          <Description>"Godmode - Physical Damage"</Description>
-          <LastState/>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>define(address,"DDDA.exe"+376F82)
+          <ID>132</ID>
+          <Description>"Godmode (WIP)"</Description>
+          <Options moManualExpandCollapse="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>40</ID>
+              <Description>"Godmode - Physical Damage"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>define(address,"DDDA.exe"+376F82)
 define(bytes,F3 0F 5C 44 24 0C)
 
 [ENABLE]
@@ -324,13 +333,13 @@ address:
 "DDDA.exe"+376FA6: F6 86 6C 20 00 00 02     -  test byte ptr [esi+0000206C],02
 }
 </AssemblerScript>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>44</ID>
-          <Description>"Godmode - DOT Damage"</Description>
-          <LastState/>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>define(address,"DDDA.exe"+488F95)
+            </CheatEntry>
+            <CheatEntry>
+              <ID>44</ID>
+              <Description>"Godmode - DOT Damage"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>define(address,"DDDA.exe"+488F95)
 define(bytes,F3 0F 11 4D 08)
 
 [ENABLE]
@@ -377,6 +386,79 @@ address:
 "DDDA.exe"+488FAF: 74 09                    -  je DDDA.exe+488FBA
 }
 </AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>133</ID>
+          <Description>"Gain level per kill (party)"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>{
+  Grants 1 lvl per kill
+}
+
+define(address,"DDDA.exe"+382D9B)
+define(bytes,01 8F C4 02 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  push ecx
+  mov ecx,[edi+2C8] // ECX = EXP needed
+  mov [edi+000002C4],ecx
+  pop ecx
+  jmp return
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // add [edi+000002C4],ecx
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DDDA.exe"+382D9B
+
+"DDDA.exe"+382D71: 79 06                    -  jns DDDA.exe+382D79
+"DDDA.exe"+382D73: D8 05 20 C2 61 01        -  fadd dword ptr [DDDA.exe+121C220]
+"DDDA.exe"+382D79: D8 4C 24 04              -  fmul dword ptr [esp+04]
+"DDDA.exe"+382D7D: D9 7C 24 14              -  fnstcw [esp+14]
+"DDDA.exe"+382D81: 0F B7 44 24 14           -  movzx eax,word ptr [esp+14]
+"DDDA.exe"+382D86: 0D 00 0C 00 00           -  or eax,00000C00
+"DDDA.exe"+382D8B: 89 44 24 04              -  mov [esp+04],eax
+"DDDA.exe"+382D8F: D9 6C 24 04              -  fldcw [esp+04]
+"DDDA.exe"+382D93: DF 7C 24 08              -  fistp qword ptr [esp+08]
+"DDDA.exe"+382D97: 8B 4C 24 08              -  mov ecx,[esp+08]
+// ---------- INJECTING HERE ----------
+"DDDA.exe"+382D9B: 01 8F C4 02 00 00        -  add [edi+000002C4],ecx
+// ---------- DONE INJECTING  ----------
+"DDDA.exe"+382DA1: D9 6C 24 14              -  fldcw [esp+14]
+"DDDA.exe"+382DA5: E8 86 01 00 00           -  call DDDA.exe+382F30
+"DDDA.exe"+382DAA: 8B 15 D4 A4 8F 01        -  mov edx,[DDDA.exe+14FA4D4]
+"DDDA.exe"+382DB0: F3 0F 10 05 B8 19 53 01  -  movss xmm0,[DDDA.exe+11319B8]
+"DDDA.exe"+382DB8: 8B F0                    -  mov esi,eax
+"DDDA.exe"+382DBA: 8B 47 08                 -  mov eax,[edi+08]
+"DDDA.exe"+382DBD: 69 C0 E8 11 00 00        -  imul eax,eax,000011E8
+"DDDA.exe"+382DC3: 8B 84 10 E4 03 00 00     -  mov eax,[eax+edx+000003E4]
+"DDDA.exe"+382DCA: F3 0F 11 44 24 04        -  movss [esp+04],xmm0
+"DDDA.exe"+382DD0: F3 0F 11 44 24 14        -  movss [esp+14],xmm0
+}
+</AssemblerScript>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -391,7 +473,7 @@ address:
           <ID>97</ID>
           <Description>"Level up data"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="2A9C15D0" RealAddress="0DDB1C08"/>
+          <LastState Value="00000000" RealAddress="0DDE1C08"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>DDDA.exe+14FA4EC</Address>
@@ -403,7 +485,6 @@ address:
               <ID>89</ID>
               <Description>"Level up exp requirement"</Description>
               <Options moHideChildren="1"/>
-              <LastState Value="14AA8E50" RealAddress="2A9C1640"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
@@ -414,7 +495,6 @@ address:
                 <CheatEntry>
                   <ID>87</ID>
                   <Description>"Level 1/base exp requirement"</Description>
-                  <LastState Value="200" RealAddress="2A94FE08"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+0</Address>
                   <Offsets>
@@ -425,7 +505,6 @@ address:
                 <CheatEntry>
                   <ID>96</ID>
                   <Description>"Level up exp mult"</Description>
-                  <LastState Value="1.299999952" RealAddress="2A950194"/>
                   <VariableType>Float</VariableType>
                   <Address>+0</Address>
                   <Offsets>
@@ -436,7 +515,6 @@ address:
                 <CheatEntry>
                   <ID>90</ID>
                   <Description>"Level up exp step"</Description>
-                  <LastState Value="220" RealAddress="2A94FE98"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+0</Address>
                   <Offsets>
@@ -447,7 +525,6 @@ address:
                 <CheatEntry>
                   <ID>95</ID>
                   <Description>"Next exp mult level threshold"</Description>
-                  <LastState Value="6" RealAddress="2A94FD18"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+0</Address>
                   <Offsets>
@@ -458,7 +535,6 @@ address:
                 <CheatEntry>
                   <ID>98</ID>
                   <Description>"ESI DWORD PTR DDDA.exe+75C0FE"</Description>
-                  <LastState Value="40400000" RealAddress="2A94FD14"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+0</Address>
@@ -475,7 +551,6 @@ address:
           <ID>63</ID>
           <Description>"Stats"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="01595D74" RealAddress="0DD97EF0"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>DDDA.exe+14FA4D8</Address>
@@ -490,84 +565,72 @@ address:
             <CheatEntry>
               <ID>65</ID>
               <Description>"HP"</Description>
-              <LastState Value="896" RealAddress="0DD9818C"/>
               <VariableType>Float</VariableType>
               <Address>+29C</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>66</ID>
               <Description>"Max HP"</Description>
-              <LastState Value="896" RealAddress="0DD98190"/>
               <VariableType>Float</VariableType>
               <Address>+2A0</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>67</ID>
               <Description>"Recoverable HP"</Description>
-              <LastState Value="896" RealAddress="0DD98194"/>
               <VariableType>Float</VariableType>
               <Address>+2A4</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>68</ID>
               <Description>"Stamina"</Description>
-              <LastState Value="1010" RealAddress="0DD98198"/>
               <VariableType>Float</VariableType>
               <Address>+2A8</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>78</ID>
               <Description>"Max stamina (Base)"</Description>
-              <LastState Value="560" RealAddress="0DD9819C"/>
               <VariableType>Float</VariableType>
               <Address>+2AC</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>79</ID>
               <Description>"Max stamina (Bonus)"</Description>
-              <LastState Value="450" RealAddress="0DD981A0"/>
               <VariableType>Float</VariableType>
               <Address>+2B0</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>81</ID>
               <Description>"EXP"</Description>
-              <LastState Value="1711" RealAddress="0DD981B4"/>
               <VariableType>4 Bytes</VariableType>
               <Address>+2C4</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>82</ID>
               <Description>"EXP needed"</Description>
-              <LastState Value="31260" RealAddress="0DD981B8"/>
               <VariableType>4 Bytes</VariableType>
               <Address>+2C8</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>69</ID>
               <Description>"Gold"</Description>
-              <LastState Value="707555" RealAddress="0DD98238"/>
               <VariableType>4 Bytes</VariableType>
               <Address>+348</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>70</ID>
               <Description>"Rift Crystals"</Description>
-              <LastState Value="105" RealAddress="0DD9823C"/>
               <VariableType>4 Bytes</VariableType>
               <Address>+34C</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>71</ID>
               <Description>"Level"</Description>
-              <LastState Value="28" RealAddress="0DD985F0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>+700</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>72</ID>
               <Description>"Name"</Description>
-              <LastState RealAddress="0DD985FC"/>
               <VariableType>String</VariableType>
               <Length>32</Length>
               <Unicode>0</Unicode>
@@ -873,7 +936,7 @@ end
   <DisassemblerComments>
     <DisassemblerComment>
       <Address>"DDDA.exe"+220F3</Address>
-      <Comment>xmm0 =actor.maxHealth
+      <Comment>xmm0 = actor.maxHealth
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -1013,6 +1076,31 @@ from item stack
     <DisassemblerComment>
       <Address>"DDDA.exe"+38239B</Address>
       <Comment>xmm2 = actor.maxStamina
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+382D10</Address>
+      <Comment>Start of 'addKillRewards(actor, creature)'
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+382D18</Address>
+      <Comment>ecx = actor base
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+382D9B</Address>
+      <Comment>actor.exp += expGain
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+382EE9</Address>
+      <Comment>player.discipline += disciplineGain
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+382F01</Address>
+      <Comment>Limit discipline if higher than 999_999
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
