@@ -5,7 +5,7 @@
       <ID>22</ID>
       <Description>"Game states"</Description>
       <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
-      <LastState Value="" Activated="1" RealAddress="00000000"/>
+      <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
@@ -28,7 +28,7 @@
         </CheatEntry>
         <CheatEntry>
           <ID>118</ID>
-          <Description>"Player"</Description>
+          <Description>"Party"</Description>
           <Options moManualExpandCollapse="1"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
@@ -41,131 +41,486 @@
           </Offsets>
           <CheatEntries>
             <CheatEntry>
-              <ID>130</ID>
-              <Description>"HP (instanced player)"</Description>
+              <ID>184</ID>
+              <Description>"Player"</Description>
               <Options moManualExpandCollapse="1"/>
-              <VariableType>Float</VariableType>
-              <Address>-20D4</Address>
-              <Offsets>
-                <Offset>8</Offset>
-                <Offset>0</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>126</ID>
-              <Description>"Position"</Description>
-              <Options moManualExpandCollapse="1"/>
-              <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
-              <Address>-3DAC</Address>
+              <Address>+0</Address>
               <CheatEntries>
                 <CheatEntry>
-                  <ID>125</ID>
-                  <Description>"X"</Description>
+                  <ID>130</ID>
+                  <Description>"HP (instanced player)"</Description>
+                  <Options moManualExpandCollapse="1"/>
                   <VariableType>Float</VariableType>
+                  <Address>-20D4</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                    <Offset>0</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>126</ID>
+                  <Description>"Position"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>-3DAC</Address>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>125</ID>
+                      <Description>"X"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+0</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>123</ID>
+                      <Description>"Y"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+4</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>124</ID>
+                      <Description>"Z"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+8</Address>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>119</ID>
+                  <Description>"Stats for save game"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
                   <Address>+0</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>123</ID>
-                  <Description>"Y"</Description>
-                  <VariableType>Float</VariableType>
-                  <Address>+4</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>124</ID>
-                  <Description>"Z"</Description>
-                  <VariableType>Float</VariableType>
-                  <Address>+8</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>106</ID>
+                      <Description>"HP (read only)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+29C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>107</ID>
+                      <Description>"Max HP"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+2A0</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>108</ID>
+                      <Description>"Recoverable HP"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+2A4</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>109</ID>
+                      <Description>"Stamina"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+2A8</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>110</ID>
+                      <Description>"Max stamina (Base)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+2AC</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>111</ID>
+                      <Description>"Max stamina (Bonus)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+2B0</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>112</ID>
+                      <Description>"EXP"</Description>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+2C4</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>113</ID>
+                      <Description>"EXP needed"</Description>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+2C8</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>138</ID>
+                      <Description>"Vocations"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+2D0</Address>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>139</ID>
+                          <Description>"Fighter"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+0</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>136</ID>
+                              <Description>"Vocation rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>114</ID>
+                              <Description>"Discipline gained"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+28</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>137</ID>
+                              <Description>"Discipline for next rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+50</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>159</ID>
+                          <Description>"Strider"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+4</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>160</ID>
+                              <Description>"Vocation rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>161</ID>
+                              <Description>"Discipline gained"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+28</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>162</ID>
+                              <Description>"Discipline for next rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+50</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>155</ID>
+                          <Description>"Mage"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+8</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>156</ID>
+                              <Description>"Vocation rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>157</ID>
+                              <Description>"Discipline gained"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+28</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>158</ID>
+                              <Description>"Discipline for next rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+50</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>163</ID>
+                          <Description>"Mystic Knight"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+C</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>164</ID>
+                              <Description>"Vocation rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>165</ID>
+                              <Description>"Discipline gained"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+28</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>166</ID>
+                              <Description>"Discipline for next rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+50</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>167</ID>
+                          <Description>"Assassin"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+10</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>168</ID>
+                              <Description>"Vocation rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>169</ID>
+                              <Description>"Discipline gained"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+28</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>170</ID>
+                              <Description>"Discipline for next rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+50</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>171</ID>
+                          <Description>"Magick Archer"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+14</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>172</ID>
+                              <Description>"Vocation rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>173</ID>
+                              <Description>"Discipline gained"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+28</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>174</ID>
+                              <Description>"Discipline for next rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+50</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>175</ID>
+                          <Description>"Warrior"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+18</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>176</ID>
+                              <Description>"Vocation rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>177</ID>
+                              <Description>"Discipline gained"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+28</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>178</ID>
+                              <Description>"Discipline for next rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+50</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>179</ID>
+                          <Description>"Ranger"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+1C</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>180</ID>
+                              <Description>"Vocation rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>181</ID>
+                              <Description>"Discipline gained"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+28</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>182</ID>
+                              <Description>"Discipline for next rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+50</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>140</ID>
+                          <Description>"Sorcerer"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>141</ID>
+                              <Description>"Vocation rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>142</ID>
+                              <Description>"Discipline gained"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+28</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>143</ID>
+                              <Description>"Discipline for next rank"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>+50</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>135</ID>
+                      <Description>"Discipline"</Description>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+344</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>131</ID>
+                      <Description>"Gold"</Description>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+348</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>115</ID>
+                      <Description>"Rift Crystals"</Description>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+34C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>116</ID>
+                      <Description>"Level"</Description>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+700</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>117</ID>
+                      <Description>"Name"</Description>
+                      <VariableType>String</VariableType>
+                      <Length>32</Length>
+                      <Unicode>0</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+70C</Address>
+                    </CheatEntry>
+                  </CheatEntries>
                 </CheatEntry>
               </CheatEntries>
             </CheatEntry>
             <CheatEntry>
-              <ID>119</ID>
-              <Description>"Stats for save game"</Description>
+              <ID>185</ID>
+              <Description>"Main pawn"</Description>
               <Options moManualExpandCollapse="1"/>
-              <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
               <Offsets>
-                <Offset>0</Offset>
+                <Offset>+7F0</Offset>
               </Offsets>
               <CheatEntries>
                 <CheatEntry>
-                  <ID>106</ID>
+                  <ID>194</ID>
                   <Description>"HP (read only)"</Description>
                   <VariableType>Float</VariableType>
                   <Address>+29C</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>107</ID>
+                  <ID>196</ID>
                   <Description>"Max HP"</Description>
                   <VariableType>Float</VariableType>
                   <Address>+2A0</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>108</ID>
+                  <ID>197</ID>
                   <Description>"Recoverable HP"</Description>
                   <VariableType>Float</VariableType>
                   <Address>+2A4</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>109</ID>
+                  <ID>198</ID>
                   <Description>"Stamina"</Description>
                   <VariableType>Float</VariableType>
                   <Address>+2A8</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>110</ID>
+                  <ID>199</ID>
                   <Description>"Max stamina (Base)"</Description>
                   <VariableType>Float</VariableType>
                   <Address>+2AC</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>111</ID>
+                  <ID>200</ID>
                   <Description>"Max stamina (Bonus)"</Description>
                   <VariableType>Float</VariableType>
                   <Address>+2B0</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>112</ID>
+                  <ID>201</ID>
                   <Description>"EXP"</Description>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+2C4</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>113</ID>
+                  <ID>202</ID>
                   <Description>"EXP needed"</Description>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+2C8</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>138</ID>
+                  <ID>203</ID>
                   <Description>"Vocations"</Description>
                   <Options moManualExpandCollapse="1"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+2D0</Address>
                   <CheatEntries>
                     <CheatEntry>
-                      <ID>139</ID>
+                      <ID>204</ID>
                       <Description>"Fighter"</Description>
                       <Options moManualExpandCollapse="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+0</Address>
                       <CheatEntries>
                         <CheatEntry>
-                          <ID>136</ID>
+                          <ID>205</ID>
                           <Description>"Vocation rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+0</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>114</ID>
+                          <ID>206</ID>
                           <Description>"Discipline gained"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+28</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>137</ID>
+                          <ID>207</ID>
                           <Description>"Discipline for next rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+50</Address>
@@ -173,26 +528,26 @@
                       </CheatEntries>
                     </CheatEntry>
                     <CheatEntry>
-                      <ID>159</ID>
+                      <ID>208</ID>
                       <Description>"Strider"</Description>
                       <Options moManualExpandCollapse="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+4</Address>
                       <CheatEntries>
                         <CheatEntry>
-                          <ID>160</ID>
+                          <ID>209</ID>
                           <Description>"Vocation rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+0</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>161</ID>
+                          <ID>210</ID>
                           <Description>"Discipline gained"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+28</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>162</ID>
+                          <ID>211</ID>
                           <Description>"Discipline for next rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+50</Address>
@@ -200,26 +555,26 @@
                       </CheatEntries>
                     </CheatEntry>
                     <CheatEntry>
-                      <ID>155</ID>
+                      <ID>212</ID>
                       <Description>"Mage"</Description>
                       <Options moManualExpandCollapse="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+8</Address>
                       <CheatEntries>
                         <CheatEntry>
-                          <ID>156</ID>
+                          <ID>213</ID>
                           <Description>"Vocation rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+0</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>157</ID>
+                          <ID>214</ID>
                           <Description>"Discipline gained"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+28</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>158</ID>
+                          <ID>215</ID>
                           <Description>"Discipline for next rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+50</Address>
@@ -227,26 +582,26 @@
                       </CheatEntries>
                     </CheatEntry>
                     <CheatEntry>
-                      <ID>163</ID>
+                      <ID>216</ID>
                       <Description>"Mystic Knight"</Description>
                       <Options moManualExpandCollapse="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+C</Address>
                       <CheatEntries>
                         <CheatEntry>
-                          <ID>164</ID>
+                          <ID>217</ID>
                           <Description>"Vocation rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+0</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>165</ID>
+                          <ID>218</ID>
                           <Description>"Discipline gained"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+28</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>166</ID>
+                          <ID>219</ID>
                           <Description>"Discipline for next rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+50</Address>
@@ -254,26 +609,26 @@
                       </CheatEntries>
                     </CheatEntry>
                     <CheatEntry>
-                      <ID>167</ID>
+                      <ID>220</ID>
                       <Description>"Assassin"</Description>
                       <Options moManualExpandCollapse="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+10</Address>
                       <CheatEntries>
                         <CheatEntry>
-                          <ID>168</ID>
+                          <ID>221</ID>
                           <Description>"Vocation rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+0</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>169</ID>
+                          <ID>222</ID>
                           <Description>"Discipline gained"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+28</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>170</ID>
+                          <ID>223</ID>
                           <Description>"Discipline for next rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+50</Address>
@@ -281,26 +636,26 @@
                       </CheatEntries>
                     </CheatEntry>
                     <CheatEntry>
-                      <ID>171</ID>
+                      <ID>224</ID>
                       <Description>"Magick Archer"</Description>
                       <Options moManualExpandCollapse="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+14</Address>
                       <CheatEntries>
                         <CheatEntry>
-                          <ID>172</ID>
+                          <ID>225</ID>
                           <Description>"Vocation rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+0</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>173</ID>
+                          <ID>226</ID>
                           <Description>"Discipline gained"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+28</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>174</ID>
+                          <ID>227</ID>
                           <Description>"Discipline for next rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+50</Address>
@@ -308,26 +663,26 @@
                       </CheatEntries>
                     </CheatEntry>
                     <CheatEntry>
-                      <ID>175</ID>
+                      <ID>228</ID>
                       <Description>"Warrior"</Description>
                       <Options moManualExpandCollapse="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+18</Address>
                       <CheatEntries>
                         <CheatEntry>
-                          <ID>176</ID>
+                          <ID>229</ID>
                           <Description>"Vocation rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+0</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>177</ID>
+                          <ID>230</ID>
                           <Description>"Discipline gained"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+28</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>178</ID>
+                          <ID>231</ID>
                           <Description>"Discipline for next rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+50</Address>
@@ -335,26 +690,26 @@
                       </CheatEntries>
                     </CheatEntry>
                     <CheatEntry>
-                      <ID>179</ID>
+                      <ID>232</ID>
                       <Description>"Ranger"</Description>
                       <Options moManualExpandCollapse="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+1C</Address>
                       <CheatEntries>
                         <CheatEntry>
-                          <ID>180</ID>
+                          <ID>233</ID>
                           <Description>"Vocation rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+0</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>181</ID>
+                          <ID>234</ID>
                           <Description>"Discipline gained"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+28</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>182</ID>
+                          <ID>235</ID>
                           <Description>"Discipline for next rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+50</Address>
@@ -362,26 +717,26 @@
                       </CheatEntries>
                     </CheatEntry>
                     <CheatEntry>
-                      <ID>140</ID>
+                      <ID>236</ID>
                       <Description>"Sorcerer"</Description>
                       <Options moManualExpandCollapse="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+20</Address>
                       <CheatEntries>
                         <CheatEntry>
-                          <ID>141</ID>
+                          <ID>237</ID>
                           <Description>"Vocation rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+0</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>142</ID>
+                          <ID>238</ID>
                           <Description>"Discipline gained"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+28</Address>
                         </CheatEntry>
                         <CheatEntry>
-                          <ID>143</ID>
+                          <ID>239</ID>
                           <Description>"Discipline for next rank"</Description>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+50</Address>
@@ -391,31 +746,31 @@
                   </CheatEntries>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>135</ID>
+                  <ID>240</ID>
                   <Description>"Discipline"</Description>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+344</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>131</ID>
+                  <ID>241</ID>
                   <Description>"Gold"</Description>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+348</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>115</ID>
+                  <ID>242</ID>
                   <Description>"Rift Crystals"</Description>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+34C</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>116</ID>
+                  <ID>243</ID>
                   <Description>"Level"</Description>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+700</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>117</ID>
+                  <ID>244</ID>
                   <Description>"Name"</Description>
                   <VariableType>String</VariableType>
                   <Length>32</Length>
@@ -423,6 +778,69 @@
                   <CodePage>0</CodePage>
                   <ZeroTerminate>1</ZeroTerminate>
                   <Address>+70C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>245</ID>
+                  <Description>"Inclinations"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+14C0</Address>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>183</ID>
+                      <Description>"Scather"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+0</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>247</ID>
+                      <Description>"Medicant"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+1*$12</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>248</ID>
+                      <Description>"Mitigator"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+2*$12</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>249</ID>
+                      <Description>"Challenger"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+3*$12</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>246</ID>
+                      <Description>"Utilitarian"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+4*$12</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>186</ID>
+                      <Description>"Guardian"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+5*$12</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>250</ID>
+                      <Description>"Nexus"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+6*$12</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>251</ID>
+                      <Description>"Pioneer"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+7*$12</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>252</ID>
+                      <Description>"Acquisitor"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+8*$12</Address>
+                    </CheatEntry>
+                  </CheatEntries>
                 </CheatEntry>
               </CheatEntries>
             </CheatEntry>
