@@ -4,7 +4,7 @@
     <CheatEntry>
       <ID>22</ID>
       <Description>"Game states"</Description>
-      <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
       <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
@@ -27,9 +27,18 @@
           <Address>DDDA.exe+14D1040</Address>
         </CheatEntry>
         <CheatEntry>
+          <ID>253</ID>
+          <Description>"InCombat"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>18FA4BC</Address>
+          <Offsets>
+            <Offset>BE2CC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
           <ID>118</ID>
           <Description>"Party"</Description>
-          <Options moManualExpandCollapse="1"/>
+          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>DDDA.exe+14FA4D8</Address>
@@ -43,7 +52,7 @@
             <CheatEntry>
               <ID>184</ID>
               <Description>"Player"</Description>
-              <Options moManualExpandCollapse="1"/>
+              <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
               <CheatEntries>
@@ -61,7 +70,7 @@
                 <CheatEntry>
                   <ID>126</ID>
                   <Description>"Position"</Description>
-                  <Options moManualExpandCollapse="1"/>
+                  <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>4 Bytes</VariableType>
                   <Address>-3DAC</Address>
@@ -89,7 +98,7 @@
                 <CheatEntry>
                   <ID>119</ID>
                   <Description>"Stats for save game"</Description>
-                  <Options moManualExpandCollapse="1"/>
+                  <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+0</Address>
@@ -148,14 +157,14 @@
                     <CheatEntry>
                       <ID>138</ID>
                       <Description>"Vocations"</Description>
-                      <Options moManualExpandCollapse="1"/>
+                      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+2D0</Address>
                       <CheatEntries>
                         <CheatEntry>
                           <ID>139</ID>
                           <Description>"Fighter"</Description>
-                          <Options moManualExpandCollapse="1"/>
+                          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+0</Address>
                           <CheatEntries>
@@ -182,7 +191,7 @@
                         <CheatEntry>
                           <ID>159</ID>
                           <Description>"Strider"</Description>
-                          <Options moManualExpandCollapse="1"/>
+                          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+4</Address>
                           <CheatEntries>
@@ -209,7 +218,7 @@
                         <CheatEntry>
                           <ID>155</ID>
                           <Description>"Mage"</Description>
-                          <Options moManualExpandCollapse="1"/>
+                          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+8</Address>
                           <CheatEntries>
@@ -371,7 +380,7 @@
                         <CheatEntry>
                           <ID>140</ID>
                           <Description>"Sorcerer"</Description>
-                          <Options moManualExpandCollapse="1"/>
+                          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+20</Address>
                           <CheatEntries>
@@ -438,7 +447,7 @@
             <CheatEntry>
               <ID>185</ID>
               <Description>"Main pawn"</Description>
-              <Options moManualExpandCollapse="1"/>
+              <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
               <Offsets>
@@ -496,14 +505,14 @@
                 <CheatEntry>
                   <ID>203</ID>
                   <Description>"Vocations"</Description>
-                  <Options moManualExpandCollapse="1"/>
+                  <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+2D0</Address>
                   <CheatEntries>
                     <CheatEntry>
                       <ID>204</ID>
                       <Description>"Fighter"</Description>
-                      <Options moManualExpandCollapse="1"/>
+                      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                       <VariableType>4 Bytes</VariableType>
                       <Address>+0</Address>
                       <CheatEntries>
@@ -782,7 +791,7 @@
                 <CheatEntry>
                   <ID>245</ID>
                   <Description>"Inclinations"</Description>
-                  <Options moManualExpandCollapse="1"/>
+                  <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+14C0</Address>
                   <CheatEntries>
@@ -926,14 +935,14 @@
     <CheatEntry>
       <ID>53</ID>
       <Description>"Cheats"</Description>
-      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+      <Options moManualExpandCollapse="1" moDeactivateChildrenAsWell="1" moAllowManualCollapseAndExpand="1"/>
       <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
           <ID>132</ID>
           <Description>"Godmode (WIP)"</Description>
-          <Options moManualExpandCollapse="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+          <Options moManualExpandCollapse="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1" moAllowManualCollapseAndExpand="1"/>
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
@@ -1117,12 +1126,112 @@ dealloc(newmem)
 }
 </AssemblerScript>
         </CheatEntry>
+        <CheatEntry>
+          <ID>254</ID>
+          <Description>"No stamina drain in combat"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(addressInCombat,"DDDA.exe"+417E5)
+define(bytesInCombat,C6 87 CC E2 0B 00 01)
+
+define(addressOutCombat,"DDDA.exe"+3D174)
+define(bytesOutCombat,88 9E CC E2 0B 00)
+
+define(addressStaminaChange,"DDDA.exe"+781F7E)
+define(bytesStaminaChange,F3 0F 58 C1 F3 0F 11 85 A8 02 00 00)
+
+define(staminaCostTheshold,(float)-100) // max stamina drain out of combat that will be ignored
+
+[ENABLE]
+
+assert(addressInCombat,bytesInCombat)
+assert(addressOutCombat,bytesOutCombat)
+assert(addressStaminaChange,bytesStaminaChange)
+
+alloc(memStaminaDrain,$1000)
+alloc(bInCombat,$4)
+
+registersymbol(memStaminaDrain)
+registersymbol(bInCombat)
+
+label(returnInCombat)
+label(returnOutCombat)
+label(staminaChange)
+label(returnStaminaChange)
+
+// set bInCombat to true if in combat
+memStaminaDrain:
+  mov byte ptr [edi+000BE2CC],01
+  mov [bInCombat],1
+  jmp returnInCombat
+
+// set bInCombat to false if out of combat
+memStaminaDrain+20:
+  mov [esi+000BE2CC],bl
+  mov [bInCombat],0
+  jmp returnOutCombat
+
+// Ignore stamina drain if out of combat expect if lower than threshold (to prevent out of combat cheese)
+memStaminaDrain+40:
+  push eax
+  mov eax,[bInCombat]
+  cmp eax,1
+  pop eax
+  je staminaChange
+  // Only allow drastic decreases (ex: skill use)
+  // TODO: Add condition to check origin of stamina usage
+  comiss xmm1,[memStaminaDrain+100]
+  jb staminaChange // change &lt; staminaCostTheshold
+  comiss xmm1,[memStaminaDrain+104]
+  ja staminaChange // change &gt; 0
+  xorps xmm1,xmm1 // change within threshold: set cost to 0
+staminaChange:
+  addss xmm0,xmm1
+  movss [ebp+000002A8],xmm0
+  jmp returnStaminaChange
+
+memStaminaDrain+100:
+ dq staminaCostTheshold
+ dq (float)0
+
+addressInCombat:
+  jmp memStaminaDrain
+  nop 2
+returnInCombat:
+
+addressOutCombat:
+  jmp memStaminaDrain+20
+  nop 1
+returnOutCombat:
+
+addressStaminaChange:
+  jmp memStaminaDrain+40
+  nop 7
+returnStaminaChange:
+
+[DISABLE]
+
+addressInCombat:
+  db bytesInCombat
+
+addressOutCombat:
+  db bytesOutCombat
+
+addressStaminaChange:
+  db bytesStaminaChange
+
+dealloc(bInCombat)
+dealloc(memStaminaDrain)
+unregistersymbol(bInCombat)
+unregistersymbol(memStaminaDrain)
+</AssemblerScript>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
       <ID>88</ID>
       <Description>"WIP"</Description>
-      <Options moHideChildren="1"/>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
       <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
@@ -1204,6 +1313,76 @@ dealloc(newmem)
           </CheatEntries>
         </CheatEntry>
       </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>255</ID>
+      <Description>"WIP Testing stamina drain"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"DDDA.exe"+781F7E)
+define(bytes,F3 0F 58 C1 F3 0F 11 85 A8 02 00 00)
+
+[ENABLE]
+assert(address,bytes)
+alloc(newmem,$1000)
+registersymbol(newmem)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  comiss xmm1,xmm4
+  jb return
+  addss xmm0,xmm1
+  movss [ebp+000002A8],xmm0
+  jmp return
+
+address:
+  jmp newmem
+  nop 7
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // addss xmm0,xmm1
+  // movss [ebp+000002A8],xmm0
+
+dealloc(newmem)
+unregistersymbol(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DDDA.exe"+781F7E
+
+"DDDA.exe"+781F5E: 6A 00                    -  push 00
+"DDDA.exe"+781F60: 6A 00                    -  push 00
+"DDDA.exe"+781F62: 6A 00                    -  push 00
+"DDDA.exe"+781F64: 6A 11                    -  push 11
+"DDDA.exe"+781F66: 8B CF                    -  mov ecx,edi
+"DDDA.exe"+781F68: FF D0                    -  call eax
+"DDDA.exe"+781F6A: F3 0F 10 4C 24 1C        -  movss xmm1,[esp+1C]
+"DDDA.exe"+781F70: 0F 57 E4                 -  xorps xmm4,xmm4
+"DDDA.exe"+781F73: F3 0F 10 85 A8 02 00 00  -  movss xmm0,[ebp+000002A8]
+"DDDA.exe"+781F7B: 0F 28 E8                 -  movaps xmm5,xmm0
+// ---------- INJECTING HERE ----------
+"DDDA.exe"+781F7E: F3 0F 58 C1              -  addss xmm0,xmm1
+"DDDA.exe"+781F82: F3 0F 11 85 A8 02 00 00  -  movss [ebp+000002A8],xmm0
+// ---------- DONE INJECTING  ----------
+"DDDA.exe"+781F8A: 8B BE EC 3D 00 00        -  mov edi,[esi+00003DEC]
+"DDDA.exe"+781F90: 85 FF                    -  test edi,edi
+"DDDA.exe"+781F92: 75 25                    -  jne DDDA.exe+781FB9
+"DDDA.exe"+781F94: F3 0F 10 05 B8 19 53 01  -  movss xmm0,[DDDA.exe+11319B8]
+"DDDA.exe"+781F9C: EB 20                    -  jmp DDDA.exe+781FBE
+"DDDA.exe"+781F9E: 84 DB                    -  test bl,bl
+"DDDA.exe"+781FA0: 75 D1                    -  jne DDDA.exe+781F73
+"DDDA.exe"+781FA2: 8B 4C 24 20              -  mov ecx,[esp+20]
+"DDDA.exe"+781FA6: 51                       -  push ecx
+"DDDA.exe"+781FA7: 51                       -  push ecx
+}
+</AssemblerScript>
     </CheatEntry>
   </CheatEntries>
   <CheatCodes>
@@ -1490,10 +1669,12 @@ function registerDddaSymbols()
   setSymbol('pPlayer', 'DDDA.exe+14FA4D8', '30', '0', '48', '3DEC')
 end
 
+--[[
 if not attachToDDDA() then
   print('Failed to attached to Dragon\'s Dogma: Dark Arisen')
   return
 end
+--]]
 
 -- TODO: Inject code on game load to capture pointers to player, enemies, etc
 --registerDddaSymbols()
@@ -1502,6 +1683,16 @@ end
     <DisassemblerComment>
       <Address>"DDDA.exe"+220F3</Address>
       <Comment>xmm0 = actor.maxHealth
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+3D174</Address>
+      <Comment>InCombat = false
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DDDA.exe"+417E5</Address>
+      <Comment>InCombat = true
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
