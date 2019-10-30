@@ -143,6 +143,30 @@
                       <Address>+2B0</Address>
                     </CheatEntry>
                     <CheatEntry>
+                      <ID>258</ID>
+                      <Description>"Physical (attack)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+2B4</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>259</ID>
+                      <Description>"Physical Defense"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+2B8</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>257</ID>
+                      <Description>"Magick (attack)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+2BC</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>255</ID>
+                      <Description>"Magick Defense"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>+2C0</Address>
+                    </CheatEntry>
+                    <CheatEntry>
                       <ID>112</ID>
                       <Description>"EXP"</Description>
                       <VariableType>4 Bytes</VariableType>
@@ -245,7 +269,7 @@
                         <CheatEntry>
                           <ID>163</ID>
                           <Description>"Mystic Knight"</Description>
-                          <Options moManualExpandCollapse="1"/>
+                          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+C</Address>
                           <CheatEntries>
@@ -272,7 +296,7 @@
                         <CheatEntry>
                           <ID>167</ID>
                           <Description>"Assassin"</Description>
-                          <Options moManualExpandCollapse="1"/>
+                          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+10</Address>
                           <CheatEntries>
@@ -299,7 +323,7 @@
                         <CheatEntry>
                           <ID>171</ID>
                           <Description>"Magick Archer"</Description>
-                          <Options moManualExpandCollapse="1"/>
+                          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+14</Address>
                           <CheatEntries>
@@ -326,7 +350,7 @@
                         <CheatEntry>
                           <ID>175</ID>
                           <Description>"Warrior"</Description>
-                          <Options moManualExpandCollapse="1"/>
+                          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+18</Address>
                           <CheatEntries>
@@ -353,7 +377,7 @@
                         <CheatEntry>
                           <ID>179</ID>
                           <Description>"Ranger"</Description>
-                          <Options moManualExpandCollapse="1"/>
+                          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                           <VariableType>4 Bytes</VariableType>
                           <Address>+1C</Address>
                           <CheatEntries>
@@ -489,6 +513,30 @@
                   <Description>"Max stamina (Bonus)"</Description>
                   <VariableType>Float</VariableType>
                   <Address>+2B0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>260</ID>
+                  <Description>"Physical (attack)"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2B4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>261</ID>
+                  <Description>"Physical Defense"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2B8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>262</ID>
+                  <Description>"Magick (attack)"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2BC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>263</ID>
+                  <Description>"Magick Defense"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2C0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>201</ID>
@@ -858,7 +906,7 @@
         <CheatEntry>
           <ID>73</ID>
           <Description>"Inventories"</Description>
-          <Options moHideChildren="1"/>
+          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>DDDA.exe+14FA4D4</Address>
@@ -869,7 +917,7 @@
             <CheatEntry>
               <ID>74</ID>
               <Description>"Player"</Description>
-              <Options moHideChildren="1"/>
+              <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
@@ -903,7 +951,7 @@
             <CheatEntry>
               <ID>102</ID>
               <Description>"Storage"</Description>
-              <Options moHideChildren="1"/>
+              <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>+110</Address>
@@ -935,7 +983,7 @@
     <CheatEntry>
       <ID>53</ID>
       <Description>"Cheats"</Description>
-      <Options moManualExpandCollapse="1" moDeactivateChildrenAsWell="1" moAllowManualCollapseAndExpand="1"/>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
       <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
@@ -1128,7 +1176,7 @@ dealloc(newmem)
         </CheatEntry>
         <CheatEntry>
           <ID>254</ID>
-          <Description>"No stamina drain in combat"</Description>
+          <Description>"Free sprinting when out of combat"</Description>
           <LastState/>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript>define(addressInCombat,"DDDA.exe"+417E5)
