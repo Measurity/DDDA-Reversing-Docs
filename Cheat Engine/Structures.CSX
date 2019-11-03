@@ -4724,7 +4724,9 @@
       <Element Offset="836" Vartype="4 Bytes" Bytesize="4" Description="Discipline" DisplayMethod="Unsigned Integer"/>
       <Element Offset="840" Vartype="4 Bytes" Bytesize="4" Description="Gold" DisplayMethod="Unsigned Integer"/>
       <Element Offset="844" Vartype="4 Bytes" Bytesize="4" Description="Rift Crystals" DisplayMethod="Unsigned Integer"/>
-      <Element Offset="848" Vartype="4 Bytes" Bytesize="4" RLECount="180" DisplayMethod="Unsigned Integer"/>
+      <Element Offset="848" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="Unsigned Integer"/>
+      <Element Offset="856" Vartype="4 Bytes" Bytesize="4" Description="Near death" DisplayMethod="Unsigned Integer"/>
+      <Element Offset="860" Vartype="4 Bytes" Bytesize="4" RLECount="177" DisplayMethod="Unsigned Integer"/>
       <Element Offset="1568" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="Hexadecimal"/>
       <Element Offset="1576" Vartype="Pointer" Bytesize="4" RLECount="3" DisplayMethod="Unsigned Integer"/>
       <Element Offset="1588" Vartype="4 Bytes" Bytesize="4" RLECount="51" DisplayMethod="Unsigned Integer"/>
